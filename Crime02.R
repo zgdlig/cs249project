@@ -4,7 +4,7 @@ library(plotrix)
 
 
 ##2010-2013
-CrimesAllDate<-read.csv("F:\\RCrime\\crimeAll.csv",header=TRUE)
+CrimesAllDate<-read.csv("crimeAll.csv",header=TRUE)
 CrimeData<-na.omit(CrimesAllDate)
 rm(CrimesAllDate)
 
@@ -91,7 +91,7 @@ cluster6str
 
 
 clusterinfo<-data.frame(cluster1=cluster1str,cluster2=cluster2str,cluster3=cluster3str,cluster4=cluster4str,cluster5=cluster5str,cluster6=cluster6str)
-write.table(clusterinfo, file = "F:\\RCrime\\clusterinfo.csv", sep = ",")
+write.table(clusterinfo, file = "clusterinfo.csv", sep = ",")
 
 ##cluster center
 centers<-as.data.frame(kc$centers)
